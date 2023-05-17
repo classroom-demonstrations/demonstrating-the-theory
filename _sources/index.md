@@ -1,13 +1,9 @@
-# Welcome to your Jupyter Book
+# Demonstrating the Theory
 
-This is a small sample book to give you a feel for how book content is
-structured.
+This is a first stab at documenting a collection of demonstrations. 
 
 :::{note}
 Here is a note!
-
-Note 2
-Note 3
 :::
 
 And here is a code block:
