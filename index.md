@@ -7,6 +7,7 @@ structured.
 Here is a note!
 
 Note 2
+Note 3
 :::
 
 And here is a code block:
