@@ -6,16 +6,16 @@ root: index
 chapters:
   - file: book/GeoPython_2021
 #  - file: book/gee
-  - file: book/mechanics
-  #- file: book/2 fluid mechanics
-  #- file: book/3 oscillatins and waves
-  #- file: book/4 thermodynamics
-  #- file: book/5 electromagnetism
-  #- file: book/6 optics
-  #- file: book/7 modern physics
-  #- file: book/8 astronomy
-  #- file: book/9 miscellaneous
-  #- file: book/10 films and video
+  - file: book/1 mechanics
+  - file: book/2 fluid mechanics
+  - file: book/3 oscillatins and waves
+  - file: book/4 thermodynamics
+  - file: book/5 electromagnetism
+  - file: book/6 optics
+  - file: book/7 modern physics
+  - file: book/8 astronomy
+  - file: book/9 miscellaneous
+  - file: book/10 films and video
   - file: book/bibliography
 
 # Or you organize the TOC by parts
