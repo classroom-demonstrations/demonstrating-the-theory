@@ -8,7 +8,7 @@ chapters:
 #  - file: book/gee
   - file: book/chapters/1 mechanics/1 mechanics
   - file: book/chapters/2 fluid mechanics/2 fluid mechanics
-  - file: book/chapters/3 oscillatins and waves/3 oscillatins and waves
+  - file: book/chapters/3 oscillations and waves/3 oscillations and waves
   - file: book/chapters/4 thermodynamics/4 thermodynamics
   - file: book/chapters/5 electromagnetism/5 electromagnetism
   - file: book/chapters/6 optics/6 optics
