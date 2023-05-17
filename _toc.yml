@@ -4,6 +4,7 @@
 format: jb-book
 root: index
 chapters:
+  - file: book/GeoPython_2021
   - file: book/gee
   - file: book/markdown
   - file: book/notebooks
