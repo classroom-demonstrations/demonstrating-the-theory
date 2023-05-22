@@ -8,8 +8,21 @@ chapters:
 #  - file: book/gee
   
   - file: book/chapters/1 mechanics/1 mechanics
-  - file: book/chapters/1 mechanics/1A measurements
-  
+  - file: book/chapters/1 mechanics/1A measurement
+  - file: book/chapters/1 mechanics/1C motion in one dimension
+  - file: book/chapters/1 mechanics/1D motion in two dimensions
+  - file: book/chapters/1 mechanics/1E relative motion
+  - file: book/chapters/1 mechanics/1F newton's first law
+  - file: book/chapters/1 mechanics/1G newton's second law
+  - file: book/chapters/1 mechanics/1H newton's third law
+  - file: book/chapters/1 mechanics/1J statics of rigid bodies
+  - file: book/chapters/1 mechanics/1K applications of newton's laws
+  - file: book/chapters/1 mechanics/1L gravity
+  - file: book/chapters/1 mechanics/1M work and energy
+  - file: book/chapters/1 mechanics/1N linear momentum and collisions
+  - file: book/chapters/1 mechanics/1Q rotational dynamics
+  - file: book/chapters/1 mechanics/1R properties of matter
+
   - file: book/chapters/2 fluid mechanics/2 fluid mechanics
   
   - file: book/chapters/3 oscillations and waves/3 oscillations and waves
