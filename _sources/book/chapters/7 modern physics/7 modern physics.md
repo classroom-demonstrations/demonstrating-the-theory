@@ -11,6 +11,8 @@ kernelspec:
   name: python3
 ---
 
+```{contents}
+```
 
 # 7. Modern Physics
 
