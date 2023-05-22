@@ -6,17 +6,29 @@ root: index # this is the landing page i.e. index.md
 chapters:
 #  - file: book/GeoPython_2021
 #  - file: book/gee
+  
   - file: book/chapters/1 mechanics/1 mechanics
   - file: book/chapters/1 mechanics/1A measurements
+  
   - file: book/chapters/2 fluid mechanics/2 fluid mechanics
+  
   - file: book/chapters/3 oscillations and waves/3 oscillations and waves
+  - file: book/chapters/3 oscillations and waves/3A oscillations
+  
   - file: book/chapters/4 thermodynamics/4 thermodynamics
+  
   - file: book/chapters/5 electromagnetism/5 electromagnetism
+  
   - file: book/chapters/6 optics/6 optics
+  
   - file: book/chapters/7 modern physics/7 modern physics
+  
   - file: book/chapters/8 astronomy/8 astronomy
+  
   - file: book/chapters/9 miscellaneous/9 miscellaneous
+  
   - file: book/chapters/10 films and video/10 films and video
+  
   - file: book/bibliography
 
 # Or you organize the TOC by parts
