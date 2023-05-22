@@ -7,6 +7,7 @@ chapters:
 #  - file: book/GeoPython_2021
 #  - file: book/gee
   - file: book/chapters/1 mechanics/1 mechanics
+  - file: book/chapters/1 mechanics/1A measurements
   - file: book/chapters/2 fluid mechanics/2 fluid mechanics
   - file: book/chapters/3 oscillations and waves/3 oscillations and waves
   - file: book/chapters/4 thermodynamics/4 thermodynamics
