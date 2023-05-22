@@ -4,7 +4,7 @@
 format: jb-book
 root: index # this is the landing page i.e. index.md
 chapters:
-  - file: book/GeoPython_2021
+#  - file: book/GeoPython_2021
 #  - file: book/gee
   - file: book/chapters/1 mechanics/1 mechanics
   - file: book/chapters/2 fluid mechanics/2 fluid mechanics

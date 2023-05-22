@@ -151,7 +151,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../GeoPython_2021.html">Google Earth Engine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1%20mechanics/1%20mechanics.html">1. Mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2%20fluid%20mechanics/2%20fluid%20mechanics.html">2. Fluid Mechanics</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Oscillations and Waves</a></li>
@@ -439,12 +438,63 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-roles-and-directives">What are roles and directives?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-a-directive">Using a directive</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-a-role">Using a role</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-citation">Adding a citation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#executing-code-in-your-markdown-files">Executing code in your markdown files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-oscillations">3A	Oscillations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a10-pendula">3A10	Pendula</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a15-physical-pendula">3A15	Physical Pendula</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a20-springs-oscillators">3A20	Springs &amp; Oscillators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a40-simple-harmonic-motion">3A40	Simple Harmonic Motion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a50-damped-oscillators">3A50	Damped Oscillators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a60-driven-mechanical-resonance">3A60	Driven Mechanical Resonance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a70-coupled-oscillations">3A70	Coupled Oscillations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a75-normal-modes">3A75	Normal Modes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a80-lissajous-figures">3A80	Lissajous Figures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a95-non-linear-systems">3A95	Non-Linear Systems</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-wave-motion">3B	Wave Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b10-transverse-pulses-and-waves">3B10	Transverse Pulses and Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b20-longitudinal-pulses-and-waves">3B20	Longitudinal Pulses and Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b22-standing-waves">3B22	Standing Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b25-impedence-and-dispersion">3B25	Impedence and Dispersion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b27-compound-waves">3B27	Compound Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b30-wave-properties-of-sound">3B30	Wave Properties of Sound</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b33-phase-and-group-velocity">3B33	Phase and Group Velocity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b35-reflection-refraction-sound">3B35	Reflection &amp; Refraction (Sound)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b39-transfer-of-energy-in-waves">3B39	Transfer of Energy in Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b40-doppler-effect">3B40	Doppler Effect</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b45-shock-waves">3B45	Shock Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b50-interference-and-diffraction">3B50	Interference and Diffraction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b55-interference-and-diffraction-of-sound">3B55	Interference AND Diffraction Of Sound</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b60-beats">3B60	Beats</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b70-coupled-resonators">3B70	Coupled Resonators</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-acoustics">3C	Acoustics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c10-the-ear">3C10	The Ear</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c20-pitch">3C20	Pitch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c30-intensity-and-attenuation">3C30	Intensity and Attenuation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c40-architectural-acoustics">3C40	Architectural Acoustics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c50-wave-analysis-and-synthesis">3C50	Wave Analysis and Synthesis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c55-music-perception-and-the-voice">3C55	Music Perception and the Voice</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-instruments">3D	Instruments</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d20-resonance-in-strings">3D20	Resonance in Strings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d22-stringed-instruments">3D22	Stringed Instruments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d30-resonance-cavities">3D30	Resonance Cavities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d32-air-column-instruments">3D32	Air Column Instruments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d40-resonance-in-plates-bars-solids">3D40	Resonance in Plates, Bars, Solids</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d46-tuning-forks">3D46	Tuning Forks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d50-electronic-instruments">3D50	Electronic Instruments</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-sound-reproduction">3E	Sound Reproduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e10-audio-system">3E10	Audio System</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e20-loudspeakers">3E20	Loudspeakers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e30-microphones">3E30	Microphones</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e40-amplifiers">3E40	Amplifiers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e60-recorders">3E60	Recorders</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e80-digital-system">3E80	Digital System</a></li>
 </ul>
 </li>
 </ul>
@@ -461,15 +511,70 @@ document.write(`
   <nav class="contents" id="contents" role="doc-toc">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#oscillations-and-waves" id="id3">3. Oscillations and Waves</a></p>
+<li><p><a class="reference internal" href="#oscillations-and-waves" id="id1">3. Oscillations and Waves</a></p>
 <ul>
-<li><p><a class="reference internal" href="#what-is-myst" id="id4">What is MyST?</a></p></li>
-<li><p><a class="reference internal" href="#what-are-roles-and-directives" id="id5">What are roles and directives?</a></p>
+<li><p><a class="reference internal" href="#a-oscillations" id="id2">3A	Oscillations</a></p>
 <ul>
-<li><p><a class="reference internal" href="#using-a-directive" id="id6">Using a directive</a></p></li>
-<li><p><a class="reference internal" href="#using-a-role" id="id7">Using a role</a></p></li>
-<li><p><a class="reference internal" href="#adding-a-citation" id="id8">Adding a citation</a></p></li>
-<li><p><a class="reference internal" href="#executing-code-in-your-markdown-files" id="id9">Executing code in your markdown files</a></p></li>
+<li><p><a class="reference internal" href="#a10-pendula" id="id3">3A10	Pendula</a></p></li>
+<li><p><a class="reference internal" href="#a15-physical-pendula" id="id4">3A15	Physical Pendula</a></p></li>
+<li><p><a class="reference internal" href="#a20-springs-oscillators" id="id5">3A20	Springs &amp; Oscillators</a></p></li>
+<li><p><a class="reference internal" href="#a40-simple-harmonic-motion" id="id6">3A40	Simple Harmonic Motion</a></p></li>
+<li><p><a class="reference internal" href="#a50-damped-oscillators" id="id7">3A50	Damped Oscillators</a></p></li>
+<li><p><a class="reference internal" href="#a60-driven-mechanical-resonance" id="id8">3A60	Driven Mechanical Resonance</a></p></li>
+<li><p><a class="reference internal" href="#a70-coupled-oscillations" id="id9">3A70	Coupled Oscillations</a></p></li>
+<li><p><a class="reference internal" href="#a75-normal-modes" id="id10">3A75	Normal Modes</a></p></li>
+<li><p><a class="reference internal" href="#a80-lissajous-figures" id="id11">3A80	Lissajous Figures</a></p></li>
+<li><p><a class="reference internal" href="#a95-non-linear-systems" id="id12">3A95	Non-Linear Systems</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#b-wave-motion" id="id13">3B	Wave Motion</a></p>
+<ul>
+<li><p><a class="reference internal" href="#b10-transverse-pulses-and-waves" id="id14">3B10	Transverse Pulses and Waves</a></p></li>
+<li><p><a class="reference internal" href="#b20-longitudinal-pulses-and-waves" id="id15">3B20	Longitudinal Pulses and Waves</a></p></li>
+<li><p><a class="reference internal" href="#b22-standing-waves" id="id16">3B22	Standing Waves</a></p></li>
+<li><p><a class="reference internal" href="#b25-impedence-and-dispersion" id="id17">3B25	Impedence and Dispersion</a></p></li>
+<li><p><a class="reference internal" href="#b27-compound-waves" id="id18">3B27	Compound Waves</a></p></li>
+<li><p><a class="reference internal" href="#b30-wave-properties-of-sound" id="id19">3B30	Wave Properties of Sound</a></p></li>
+<li><p><a class="reference internal" href="#b33-phase-and-group-velocity" id="id20">3B33	Phase and Group Velocity</a></p></li>
+<li><p><a class="reference internal" href="#b35-reflection-refraction-sound" id="id21">3B35	Reflection &amp; Refraction (Sound)</a></p></li>
+<li><p><a class="reference internal" href="#b39-transfer-of-energy-in-waves" id="id22">3B39	Transfer of Energy in Waves</a></p></li>
+<li><p><a class="reference internal" href="#b40-doppler-effect" id="id23">3B40	Doppler Effect</a></p></li>
+<li><p><a class="reference internal" href="#b45-shock-waves" id="id24">3B45	Shock Waves</a></p></li>
+<li><p><a class="reference internal" href="#b50-interference-and-diffraction" id="id25">3B50	Interference and Diffraction</a></p></li>
+<li><p><a class="reference internal" href="#b55-interference-and-diffraction-of-sound" id="id26">3B55	Interference AND Diffraction Of Sound</a></p></li>
+<li><p><a class="reference internal" href="#b60-beats" id="id27">3B60	Beats</a></p></li>
+<li><p><a class="reference internal" href="#b70-coupled-resonators" id="id28">3B70	Coupled Resonators</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#c-acoustics" id="id29">3C	Acoustics</a></p>
+<ul>
+<li><p><a class="reference internal" href="#c10-the-ear" id="id30">3C10	The Ear</a></p></li>
+<li><p><a class="reference internal" href="#c20-pitch" id="id31">3C20	Pitch</a></p></li>
+<li><p><a class="reference internal" href="#c30-intensity-and-attenuation" id="id32">3C30	Intensity and Attenuation</a></p></li>
+<li><p><a class="reference internal" href="#c40-architectural-acoustics" id="id33">3C40	Architectural Acoustics</a></p></li>
+<li><p><a class="reference internal" href="#c50-wave-analysis-and-synthesis" id="id34">3C50	Wave Analysis and Synthesis</a></p></li>
+<li><p><a class="reference internal" href="#c55-music-perception-and-the-voice" id="id35">3C55	Music Perception and the Voice</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#d-instruments" id="id36">3D	Instruments</a></p>
+<ul>
+<li><p><a class="reference internal" href="#d20-resonance-in-strings" id="id37">3D20	Resonance in Strings</a></p></li>
+<li><p><a class="reference internal" href="#d22-stringed-instruments" id="id38">3D22	Stringed Instruments</a></p></li>
+<li><p><a class="reference internal" href="#d30-resonance-cavities" id="id39">3D30	Resonance Cavities</a></p></li>
+<li><p><a class="reference internal" href="#d32-air-column-instruments" id="id40">3D32	Air Column Instruments</a></p></li>
+<li><p><a class="reference internal" href="#d40-resonance-in-plates-bars-solids" id="id41">3D40	Resonance in Plates, Bars, Solids</a></p></li>
+<li><p><a class="reference internal" href="#d46-tuning-forks" id="id42">3D46	Tuning Forks</a></p></li>
+<li><p><a class="reference internal" href="#d50-electronic-instruments" id="id43">3D50	Electronic Instruments</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#e-sound-reproduction" id="id44">3E	Sound Reproduction</a></p>
+<ul>
+<li><p><a class="reference internal" href="#e10-audio-system" id="id45">3E10	Audio System</a></p></li>
+<li><p><a class="reference internal" href="#e20-loudspeakers" id="id46">3E20	Loudspeakers</a></p></li>
+<li><p><a class="reference internal" href="#e30-microphones" id="id47">3E30	Microphones</a></p></li>
+<li><p><a class="reference internal" href="#e40-amplifiers" id="id48">3E40	Amplifiers</a></p></li>
+<li><p><a class="reference internal" href="#e60-recorders" id="id49">3E60	Recorders</a></p></li>
+<li><p><a class="reference internal" href="#e80-digital-system" id="id50">3E80	Digital System</a></p></li>
 </ul>
 </li>
 </ul>
@@ -477,109 +582,155 @@ document.write(`
 </ul>
 </nav>
 <section class="tex2jax_ignore mathjax_ignore" id="oscillations-and-waves">
-<h1><a class="toc-backref" href="#id3" role="doc-backlink">3. Oscillations and Waves</a><a class="headerlink" href="#oscillations-and-waves" title="Permalink to this heading">#</a></h1>
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">3. Oscillations and Waves</a><a class="headerlink" href="#oscillations-and-waves" title="Permalink to this heading">#</a></h1>
 <p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
 in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
 called <strong>MyST Markdown</strong>.</p>
-<section id="what-is-myst">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">What is MyST?</a><a class="headerlink" href="#what-is-myst" title="Permalink to this heading">#</a></h2>
-<p>MyST stands for “Markedly Structured Text”. It
-is a slight variation on a flavor of markdown called “CommonMark” markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
+<section id="a-oscillations">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">3A	Oscillations</a><a class="headerlink" href="#a-oscillations" title="Permalink to this heading">#</a></h2>
+<section id="a10-pendula">
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">3A10	Pendula</a><a class="headerlink" href="#a10-pendula" title="Permalink to this heading">#</a></h3>
 </section>
-<section id="what-are-roles-and-directives">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">What are roles and directives?</a><a class="headerlink" href="#what-are-roles-and-directives" title="Permalink to this heading">#</a></h2>
-<p>Roles and directives are two of the most powerful tools in Jupyter Book. They
-are kind of like functions, but written in a markup language. They both
-serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
-<strong>directives span many lines</strong>. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.</p>
-<section id="using-a-directive">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink">Using a directive</a><a class="headerlink" href="#using-a-directive" title="Permalink to this heading">#</a></h3>
-<p>At its simplest, you can insert a directive into your book’s content like so:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{mydirectivename}
-My directive content
-```
-</pre></div>
-</div>
-<p>This will only work if a directive with name <code class="docutils literal notranslate"><span class="pre">mydirectivename</span></code> already exists
-(which it doesn’t). There are many pre-defined directives associated with
-Jupyter Book. For example, to insert a note box into your content, you can
-use the following directive:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
-Here is a note
-```
-</pre></div>
-</div>
-<p>This results in:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note</p>
-</div>
-<p>In your built book.</p>
-<p>For more information on writing directives, see the
-<a class="reference external" href="https://myst-parser.readthedocs.io/">MyST documentation</a>.</p>
+<section id="a15-physical-pendula">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">3A15	Physical Pendula</a><a class="headerlink" href="#a15-physical-pendula" title="Permalink to this heading">#</a></h3>
 </section>
-<section id="using-a-role">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">Using a role</a><a class="headerlink" href="#using-a-role" title="Permalink to this heading">#</a></h3>
-<p>Roles are very similar to directives, but they are less-complex and written
-entirely on one line. You can insert a role into your book’s content with
-this pattern:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Some content {rolename}`and here is my role&#39;s content!`
-</pre></div>
-</div>
-<p>Again, roles will only work if <code class="docutils literal notranslate"><span class="pre">rolename</span></code> is a valid role’s name. For example,
-the <code class="docutils literal notranslate"><span class="pre">doc</span></code> role can be used to refer to another page in your book. You can
-refer directly to another page by its relative path. For example, the
-role syntax <code class="docutils literal notranslate"><span class="pre">{doc}`index`</span></code> will result in: <span class="xref std std-doc">index</span>.</p>
-<p>For more information on writing roles, see the
-<a class="reference external" href="https://myst-parser.readthedocs.io/">MyST documentation</a>.</p>
+<section id="a20-springs-oscillators">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">3A20	Springs &amp; Oscillators</a><a class="headerlink" href="#a20-springs-oscillators" title="Permalink to this heading">#</a></h3>
 </section>
-<section id="adding-a-citation">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">Adding a citation</a><a class="headerlink" href="#adding-a-citation" title="Permalink to this heading">#</a></h3>
-<p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
-the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span id="id1">[<a class="reference internal" href="../../bibliography.html#id2" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In International Conference on Cognitive Neuroscience. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.">Holdgraf <em>et al.</em>, 2014</a>]</span>.</p>
-<p>Multiple citations can be used like this:
-<span id="id2">[<a class="reference internal" href="../../bibliography.html#id3" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, Jochem W. Rieger, Nathan Crone, Jack J. Lin, Robert T. Knight, and Frédéric E. Theunissen. Rapid tuning shifts in human auditory cortex enhance speech intelligibility. Nature Communications, 7(May):13654, 2016. URL: http://www.nature.com/doifinder/10.1038/ncomms13654, doi:10.1038/ncomms13654.">Holdgraf <em>et al.</em>, 2016</a>, <a class="reference internal" href="../../bibliography.html#id5" title="Christopher Ramsay Holdgraf, J.W. Rieger, C. Micheli, S. Martin, R.T. Knight, and F.E. Theunissen. Encoding and decoding models in cognitive electrophysiology. Frontiers in Systems Neuroscience, 2017. doi:10.3389/fnsys.2017.00061.">Holdgraf <em>et al.</em>, 2017</a>]</span></p>
-<p>Moreover, you can insert a bibliography into your page with this syntax:
-The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
-render properly.
-For example, if the references for your book are stored in <code class="docutils literal notranslate"><span class="pre">references.bib</span></code>,
-then the bibliography is inserted with:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{bibliography}
-```
-</pre></div>
-</div>
-<p>Resulting in a rendered bibliography that looks like:</p>
-<!-- ```{bibliography}
-
-``` -->
+<section id="a40-simple-harmonic-motion">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">3A40	Simple Harmonic Motion</a><a class="headerlink" href="#a40-simple-harmonic-motion" title="Permalink to this heading">#</a></h3>
 </section>
-<section id="executing-code-in-your-markdown-files">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">Executing code in your markdown files</a><a class="headerlink" href="#executing-code-in-your-markdown-files" title="Permalink to this heading">#</a></h3>
-<p>If you’d like to include computational content inside these markdown files,
-you can use MyST Markdown to define cells that will be executed when your
-book is built. Jupyter Book uses <em>jupytext</em> to do this.</p>
-<p>First, add Jupytext metadata to the file. For example, to add Jupytext metadata
-to this markdown page, run this command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">markdown</span><span class="o">.</span><span class="n">md</span>
-</pre></div>
-</div>
-<p>Once a markdown file has Jupytext metadata in it, you can add the following
-directive to run the code at build time:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{code-cell}
-print(&quot;Here is some code to execute&quot;)
-```
-</pre></div>
-</div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<p>For more information about executing computational content with Jupyter Book,
-see <a class="reference external" href="https://myst-nb.readthedocs.io/">The MyST-NB documentation</a>.</p>
+<section id="a50-damped-oscillators">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">3A50	Damped Oscillators</a><a class="headerlink" href="#a50-damped-oscillators" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="a60-driven-mechanical-resonance">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">3A60	Driven Mechanical Resonance</a><a class="headerlink" href="#a60-driven-mechanical-resonance" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="a70-coupled-oscillations">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">3A70	Coupled Oscillations</a><a class="headerlink" href="#a70-coupled-oscillations" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="a75-normal-modes">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">3A75	Normal Modes</a><a class="headerlink" href="#a75-normal-modes" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="a80-lissajous-figures">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">3A80	Lissajous Figures</a><a class="headerlink" href="#a80-lissajous-figures" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="a95-non-linear-systems">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">3A95	Non-Linear Systems</a><a class="headerlink" href="#a95-non-linear-systems" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="b-wave-motion">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">3B	Wave Motion</a><a class="headerlink" href="#b-wave-motion" title="Permalink to this heading">#</a></h2>
+<section id="b10-transverse-pulses-and-waves">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">3B10	Transverse Pulses and Waves</a><a class="headerlink" href="#b10-transverse-pulses-and-waves" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b20-longitudinal-pulses-and-waves">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">3B20	Longitudinal Pulses and Waves</a><a class="headerlink" href="#b20-longitudinal-pulses-and-waves" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b22-standing-waves">
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">3B22	Standing Waves</a><a class="headerlink" href="#b22-standing-waves" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b25-impedence-and-dispersion">
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">3B25	Impedence and Dispersion</a><a class="headerlink" href="#b25-impedence-and-dispersion" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b27-compound-waves">
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">3B27	Compound Waves</a><a class="headerlink" href="#b27-compound-waves" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b30-wave-properties-of-sound">
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">3B30	Wave Properties of Sound</a><a class="headerlink" href="#b30-wave-properties-of-sound" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b33-phase-and-group-velocity">
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">3B33	Phase and Group Velocity</a><a class="headerlink" href="#b33-phase-and-group-velocity" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b35-reflection-refraction-sound">
+<h3><a class="toc-backref" href="#id21" role="doc-backlink">3B35	Reflection &amp; Refraction (Sound)</a><a class="headerlink" href="#b35-reflection-refraction-sound" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b39-transfer-of-energy-in-waves">
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">3B39	Transfer of Energy in Waves</a><a class="headerlink" href="#b39-transfer-of-energy-in-waves" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b40-doppler-effect">
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">3B40	Doppler Effect</a><a class="headerlink" href="#b40-doppler-effect" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b45-shock-waves">
+<h3><a class="toc-backref" href="#id24" role="doc-backlink">3B45	Shock Waves</a><a class="headerlink" href="#b45-shock-waves" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b50-interference-and-diffraction">
+<h3><a class="toc-backref" href="#id25" role="doc-backlink">3B50	Interference and Diffraction</a><a class="headerlink" href="#b50-interference-and-diffraction" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b55-interference-and-diffraction-of-sound">
+<h3><a class="toc-backref" href="#id26" role="doc-backlink">3B55	Interference AND Diffraction Of Sound</a><a class="headerlink" href="#b55-interference-and-diffraction-of-sound" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b60-beats">
+<h3><a class="toc-backref" href="#id27" role="doc-backlink">3B60	Beats</a><a class="headerlink" href="#b60-beats" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b70-coupled-resonators">
+<h3><a class="toc-backref" href="#id28" role="doc-backlink">3B70	Coupled Resonators</a><a class="headerlink" href="#b70-coupled-resonators" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="c-acoustics">
+<h2><a class="toc-backref" href="#id29" role="doc-backlink">3C	Acoustics</a><a class="headerlink" href="#c-acoustics" title="Permalink to this heading">#</a></h2>
+<section id="c10-the-ear">
+<h3><a class="toc-backref" href="#id30" role="doc-backlink">3C10	The Ear</a><a class="headerlink" href="#c10-the-ear" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="c20-pitch">
+<h3><a class="toc-backref" href="#id31" role="doc-backlink">3C20	Pitch</a><a class="headerlink" href="#c20-pitch" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="c30-intensity-and-attenuation">
+<h3><a class="toc-backref" href="#id32" role="doc-backlink">3C30	Intensity and Attenuation</a><a class="headerlink" href="#c30-intensity-and-attenuation" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="c40-architectural-acoustics">
+<h3><a class="toc-backref" href="#id33" role="doc-backlink">3C40	Architectural Acoustics</a><a class="headerlink" href="#c40-architectural-acoustics" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="c50-wave-analysis-and-synthesis">
+<h3><a class="toc-backref" href="#id34" role="doc-backlink">3C50	Wave Analysis and Synthesis</a><a class="headerlink" href="#c50-wave-analysis-and-synthesis" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="c55-music-perception-and-the-voice">
+<h3><a class="toc-backref" href="#id35" role="doc-backlink">3C55	Music Perception and the Voice</a><a class="headerlink" href="#c55-music-perception-and-the-voice" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="d-instruments">
+<h2><a class="toc-backref" href="#id36" role="doc-backlink">3D	Instruments</a><a class="headerlink" href="#d-instruments" title="Permalink to this heading">#</a></h2>
+<section id="d20-resonance-in-strings">
+<h3><a class="toc-backref" href="#id37" role="doc-backlink">3D20	Resonance in Strings</a><a class="headerlink" href="#d20-resonance-in-strings" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="d22-stringed-instruments">
+<h3><a class="toc-backref" href="#id38" role="doc-backlink">3D22	Stringed Instruments</a><a class="headerlink" href="#d22-stringed-instruments" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="d30-resonance-cavities">
+<h3><a class="toc-backref" href="#id39" role="doc-backlink">3D30	Resonance Cavities</a><a class="headerlink" href="#d30-resonance-cavities" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="d32-air-column-instruments">
+<h3><a class="toc-backref" href="#id40" role="doc-backlink">3D32	Air Column Instruments</a><a class="headerlink" href="#d32-air-column-instruments" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="d40-resonance-in-plates-bars-solids">
+<h3><a class="toc-backref" href="#id41" role="doc-backlink">3D40	Resonance in Plates, Bars, Solids</a><a class="headerlink" href="#d40-resonance-in-plates-bars-solids" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="d46-tuning-forks">
+<h3><a class="toc-backref" href="#id42" role="doc-backlink">3D46	Tuning Forks</a><a class="headerlink" href="#d46-tuning-forks" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="d50-electronic-instruments">
+<h3><a class="toc-backref" href="#id43" role="doc-backlink">3D50	Electronic Instruments</a><a class="headerlink" href="#d50-electronic-instruments" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="e-sound-reproduction">
+<h2><a class="toc-backref" href="#id44" role="doc-backlink">3E	Sound Reproduction</a><a class="headerlink" href="#e-sound-reproduction" title="Permalink to this heading">#</a></h2>
+<section id="e10-audio-system">
+<h3><a class="toc-backref" href="#id45" role="doc-backlink">3E10	Audio System</a><a class="headerlink" href="#e10-audio-system" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="e20-loudspeakers">
+<h3><a class="toc-backref" href="#id46" role="doc-backlink">3E20	Loudspeakers</a><a class="headerlink" href="#e20-loudspeakers" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="e30-microphones">
+<h3><a class="toc-backref" href="#id47" role="doc-backlink">3E30	Microphones</a><a class="headerlink" href="#e30-microphones" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="e40-amplifiers">
+<h3><a class="toc-backref" href="#id48" role="doc-backlink">3E40	Amplifiers</a><a class="headerlink" href="#e40-amplifiers" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="e60-recorders">
+<h3><a class="toc-backref" href="#id49" role="doc-backlink">3E60	Recorders</a><a class="headerlink" href="#e60-recorders" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="e80-digital-system">
+<h3><a class="toc-backref" href="#id50" role="doc-backlink">3E80	Digital System</a><a class="headerlink" href="#e80-digital-system" title="Permalink to this heading">#</a></h3>
 </section>
 </section>
 </section>
@@ -651,12 +802,63 @@ see <a class="reference external" href="https://myst-nb.readthedocs.io/">The MyS
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-roles-and-directives">What are roles and directives?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-a-directive">Using a directive</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-a-role">Using a role</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-citation">Adding a citation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#executing-code-in-your-markdown-files">Executing code in your markdown files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-oscillations">3A	Oscillations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a10-pendula">3A10	Pendula</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a15-physical-pendula">3A15	Physical Pendula</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a20-springs-oscillators">3A20	Springs &amp; Oscillators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a40-simple-harmonic-motion">3A40	Simple Harmonic Motion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a50-damped-oscillators">3A50	Damped Oscillators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a60-driven-mechanical-resonance">3A60	Driven Mechanical Resonance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a70-coupled-oscillations">3A70	Coupled Oscillations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a75-normal-modes">3A75	Normal Modes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a80-lissajous-figures">3A80	Lissajous Figures</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a95-non-linear-systems">3A95	Non-Linear Systems</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-wave-motion">3B	Wave Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b10-transverse-pulses-and-waves">3B10	Transverse Pulses and Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b20-longitudinal-pulses-and-waves">3B20	Longitudinal Pulses and Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b22-standing-waves">3B22	Standing Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b25-impedence-and-dispersion">3B25	Impedence and Dispersion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b27-compound-waves">3B27	Compound Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b30-wave-properties-of-sound">3B30	Wave Properties of Sound</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b33-phase-and-group-velocity">3B33	Phase and Group Velocity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b35-reflection-refraction-sound">3B35	Reflection &amp; Refraction (Sound)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b39-transfer-of-energy-in-waves">3B39	Transfer of Energy in Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b40-doppler-effect">3B40	Doppler Effect</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b45-shock-waves">3B45	Shock Waves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b50-interference-and-diffraction">3B50	Interference and Diffraction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b55-interference-and-diffraction-of-sound">3B55	Interference AND Diffraction Of Sound</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b60-beats">3B60	Beats</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b70-coupled-resonators">3B70	Coupled Resonators</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-acoustics">3C	Acoustics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c10-the-ear">3C10	The Ear</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c20-pitch">3C20	Pitch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c30-intensity-and-attenuation">3C30	Intensity and Attenuation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c40-architectural-acoustics">3C40	Architectural Acoustics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c50-wave-analysis-and-synthesis">3C50	Wave Analysis and Synthesis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c55-music-perception-and-the-voice">3C55	Music Perception and the Voice</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-instruments">3D	Instruments</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d20-resonance-in-strings">3D20	Resonance in Strings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d22-stringed-instruments">3D22	Stringed Instruments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d30-resonance-cavities">3D30	Resonance Cavities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d32-air-column-instruments">3D32	Air Column Instruments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d40-resonance-in-plates-bars-solids">3D40	Resonance in Plates, Bars, Solids</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d46-tuning-forks">3D46	Tuning Forks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d50-electronic-instruments">3D50	Electronic Instruments</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-sound-reproduction">3E	Sound Reproduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e10-audio-system">3E10	Audio System</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e20-loudspeakers">3E20	Loudspeakers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e30-microphones">3E30	Microphones</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e40-amplifiers">3E40	Amplifiers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e60-recorders">3E60	Recorders</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e80-digital-system">3E80	Digital System</a></li>
 </ul>
 </li>
 </ul>
