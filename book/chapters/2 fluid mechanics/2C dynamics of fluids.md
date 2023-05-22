@@ -14,12 +14,11 @@ kernelspec:
 ```{contents}
 ```
 
-# 2. Fluid Mechanics
-
-Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
-in regular markdown files (`.md`), you'll write in the same flavor of markdown
-called **MyST Markdown**.
-
-## 2A	Surface Tension
-## 2B	Statics of Fluids
 ## 2C	Dynamics of Fluids
+
+### 2C10	Flow Rate
+### 2C20	Forces in Moving Fluids
+### 2C30	Viscosity
+### 2C40	Turbulent and Streamline Flow
+### 2C50	Vortices
+### 2C60	Non Newtonian Fluids
