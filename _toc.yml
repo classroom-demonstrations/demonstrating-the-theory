@@ -24,18 +24,57 @@ chapters:
   - file: book/chapters/1 mechanics/1R properties of matter
 
   - file: book/chapters/2 fluid mechanics/2 fluid mechanics
+  - file: book/chapters/2 fluid mechanics/2A surface tension
+  - file: book/chapters/2 fluid mechanics/2B statics of fluids
+  - file: book/chapters/2 fluid mechanics/2C dynamics of fluids
   
   - file: book/chapters/3 oscillations and waves/3 oscillations and waves
   - file: book/chapters/3 oscillations and waves/3A oscillations
+  - file: book/chapters/3 oscillations and waves/3B wave motion
+  - file: book/chapters/3 oscillations and waves/3C acoustics
+  - file: book/chapters/3 oscillations and waves/3D instruments
+  - file: book/chapters/3 oscillations and waves/3E sound reproduction
   
   - file: book/chapters/4 thermodynamics/4 thermodynamics
-  
+  - file: book/chapters/4 thermodynamics/4A thermal properties of matter
+  - file: book/chapters/4 thermodynamics/4B heat and the first law
+  - file: book/chapters/4 thermodynamics/4C change of state
+  - file: book/chapters/4 thermodynamics/4D kinetic theory
+  - file: book/chapters/4 thermodynamics/4E gas law
+  - file: book/chapters/4 thermodynamics/4F entropy and the second law
+
   - file: book/chapters/5 electromagnetism/5 electromagnetism
-  
+  - file: book/chapters/5 electromagnetism/5A electrostatics
+  - file: book/chapters/5 electromagnetism/5B electric Fields and potential
+  - file: book/chapters/5 electromagnetism/5C capacitance
+  - file: book/chapters/5 electromagnetism/5D resistance
+  - file: book/chapters/5 electromagnetism/5E electromotive force and current
+  - file: book/chapters/5 electromagnetism/5F DC circuits
+  - file: book/chapters/5 electromagnetism/5G magnetic materials
+  - file: book/chapters/5 electromagnetism/5H magnetic fields and forces
+  - file: book/chapters/5 electromagnetism/5J inductance
+  - file: book/chapters/5 electromagnetism/5K electromagnetic induction
+  - file: book/chapters/5 electromagnetism/5L AC circuits
+  - file: book/chapters/5 electromagnetism/5M semiconductors and tubes
+  - file: book/chapters/5 electromagnetism/5N electromagnetic radiation
+
   - file: book/chapters/6 optics/6 optics
-  
+  - file: book/chapters/6 optics/6A geometrical optics
+  - file: book/chapters/6 optics/6B photometry
+  - file: book/chapters/6 optics/6C diffraction
+  - file: book/chapters/6 optics/6D interference
+  - file: book/chapters/6 optics/6F color
+  - file: book/chapters/6 optics/6H polarisation
+  - file: book/chapters/6 optics/6J the eye
+  - file: book/chapters/6 optics/6Q modern optics
+
   - file: book/chapters/7 modern physics/7 modern physics
-  
+  - file: book/chapters/7 modern physics/7A quantum effects
+  - file: book/chapters/7 modern physics/7B atomic physics
+  - file: book/chapters/7 modern physics/7D nuclear physics
+  - file: book/chapters/7 modern physics/7E elementary particles
+  - file: book/chapters/7 modern physics/7F relativity
+
   - file: book/chapters/8 astronomy/8 astronomy
   
   - file: book/chapters/9 miscellaneous/9 miscellaneous
