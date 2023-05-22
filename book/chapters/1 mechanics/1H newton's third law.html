@@ -1,0 +1,1151 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>1. Mechanics &#8212; demonstrating-the-theory</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'book/chapters/1 mechanics/1H newton's third law';</script>
+    <link rel="canonical" href="https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1 mechanics/1H newton&#39;s third law.html" />
+    <link rel="shortcut icon" href="../../../_static/fav.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="1J Statics of Rigid Bodies" href="1J%20statics%20of%20rigid%20bodies.html" />
+    <link rel="prev" title="1G Newton’s Second Law" href="1G%20newton%27s%20second%20law.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1%20mechanics.html">1. Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1A%20measurement.html">1A	Measurement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1C%20motion%20in%20one%20dimension.html">1C	Motion in one Dimension</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1D%20motion%20in%20two%20dimensions.html">1D	Motion in two Dimensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1E%20relative%20motion.html">1E	Relative Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1F%20newton%27s%20first%20law.html">1F	Newton’s First Law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1G%20newton%27s%20second%20law.html">1G	Newton’s Second Law</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1J%20statics%20of%20rigid%20bodies.html">1J	Statics of Rigid Bodies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1K%20applications%20of%20newton%27s%20laws.html">1K	Applications of Newton’s Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1L%20gravity.html">1L	Gravity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1M%20work%20and%20energy.html">1M	Work and Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1N%20linear%20momentum%20and%20collisions.html">1N	Linear Momentum and Collisions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1Q%20rotational%20dynamics.html">1Q	Rotational Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1R%20properties%20of%20matter.html">1R	Properties of Matter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2%20fluid%20mechanics/2%20fluid%20mechanics.html">2. Fluid Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3%20oscillations%20and%20waves/3%20oscillations%20and%20waves.html">3. Oscillations and Waves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3%20oscillations%20and%20waves/3A%20oscillations.html">3A	Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4%20thermodynamics/4%20thermodynamics.html">4. Thermodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5%20electromagnetism/5%20electromagnetism.html">5A	Electrostatics</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../6%20optics/6%20optics.html">6. Optics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../7%20modern%20physics/7%20modern%20physics.html">7. Modern Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../8%20astronomy/8%20astronomy.html">8. Astronomy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../9%20miscellaneous/9%20miscellaneous.html">9. Miscellaneous</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10%20films%20and%20video/10%20films%20and%20video.html">10. Films and Video</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bibliography.html">Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/classroom-demonstrations/demonstrating-the-theory/master?urlpath=tree/book/chapters/1 mechanics/1H newton's third law.md" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/classroom-demonstrations/demonstrating-the-theory/blob/master/book/chapters/1 mechanics/1H newton's third law.md" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/classroom-demonstrations/demonstrating-the-theory" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/classroom-demonstrations/demonstrating-the-theory/edit/main/book/chapters/1 mechanics/1H newton's third law.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/classroom-demonstrations/demonstrating-the-theory/issues/new?title=Issue%20on%20page%20%2Fbook/chapters/1 mechanics/1H newton's third law.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/book/chapters/1 mechanics/1H newton's third law.ipynb" target="_blank"
+   class="btn btn-sm btn-download-notebook-button dropdown-item"
+   title="Download notebook file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="../../../_sources/book/chapters/1 mechanics/1H newton's third law.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>1. Mechanics</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-measurement">1A	Measurement</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a10-basic-units">1A10	Basic Units</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a20-error-and-accuracy">1A20	Error and Accuracy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a30-coordinate-systems">1A30	Coordinate Systems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a40-vectors">1A40	Vectors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a50-math-topics">1A50	Math Topics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a60-scaling">1A60	Scaling</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-motion-in-one-dimension">1C	Motion in one Dimension</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c10-velocity">1C10	Velocity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c20-uniform-acceleration">1C20	Uniform Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c30-measuring-g">1C30	Measuring g</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-motion-in-two-dimensions">1D	Motion in two Dimensions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d10-displacement-in-two-dimensions">1D10	Displacement in Two Dimensions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d15-velocity-position-and-acceleration">1D15	Velocity, Position, and Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d40-motion-of-the-center-of-mass">1D40	Motion of the Center of Mass</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d50-central-forces">1D50	Central Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d52-deformation-by-central-forces">1D52	Deformation by Central Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d55-centrifugal-escape">1D55	Centrifugal Escape</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d60-projectile-motion">1D60	Projectile Motion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-relative-motion">1E	Relative Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e10-moving-reference-frames">1E10	Moving Reference Frames</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e20-rotating-reference-frames">1E20	Rotating Reference Frames</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e30-coriolis-effect">1E30	Coriolis Effect</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-newton-s-first-law">1F	Newton’s First Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f10-measuring-inertia">1F10	Measuring Inertia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f20-inertia-of-rest">1F20	Inertia of Rest</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f30-inertia-of-motion">1F30	Inertia of Motion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#g-newton-s-second-law">1G	Newton’s Second Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g10-force-mass-and-acceleration">1G10	Force, Mass, and Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g20-accelerated-reference-frames">1G20	Accelerated Reference Frames</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g30-complex-systems">1G30	Complex Systems</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#h-newton-s-third-law">1H	Newton’s Third Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#h10-action-and-reaction">1H10	Action and Reaction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#h11-recoil">1H11	Recoil</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#j-statics-of-rigid-bodies">1J	Statics of Rigid Bodies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#j10-finding-center-of-gravity">1J10	Finding Center of Gravity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#j11-exceeding-center-of-gravity">1J11	Exceeding Center of Gravity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#j20-stable-unstable-and-neutral-equilibrium">1J20	Stable, Unstable and Neutral Equilibrium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#j30-resolution-of-forces">1J30	Resolution of Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#j40-static-torque">1J40	Static Torque</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#k-applications-of-newton-s-laws">1K	Applications of Newton’s Laws</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#k10-dynamic-torque">1K10	Dynamic Torque</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#k20-friction">1K20	Friction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#k30-pressure">1K30	Pressure</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-gravity">1L	Gravity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l10-universal-gravitational-constant">1L10	Universal Gravitational Constant</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l20-orbits">1L20	Orbits</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#m-work-and-energy">1M	Work and Energy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#m10-work">1M10	Work</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#m20-simple-machines">1M20	Simple Machines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#m30-non-conservative-forces">1M30	Non-Conservative Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#m40-conservation-of-energy">1M40	Conservation of Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#m50-mechanical-power">1M50	Mechanical Power</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-linear-momentum-and-collisions">1N	Linear Momentum and Collisions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n10-impulse-and-thrust">1N10	Impulse and Thrust</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n20-conservation-of-linear-momentum">1N20	Conservation of Linear Momentum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n21-mass-and-momentum-transfer">1N21	Mass and Momentum Transfer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n22-rockets">1N22	Rockets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n30-collisions-in-one-dimension">1N30	Collisions in One Dimension</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n40-collisions-in-two-dimensions">1N40	Collisions in Two Dimensions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q-rotational-dynamics">1Q	Rotational Dynamics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q10-moment-of-inertia">1Q10	Moment of Inertia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q20-rotational-energy">1Q20	Rotational Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q30-transfer-of-angular-momentum">1Q30	Transfer of Angular Momentum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q40-conservation-of-angular-momentum">1Q40	Conservation of Angular Momentum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q50-gyros">1Q50	Gyros</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q60-rotational-stability">1Q60	Rotational Stability</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#r-properties-of-matter">1R	Properties of Matter</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r10-hooke-s-law">1R10	Hooke’s Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r20-tensile-and-compressive-stress">1R20	Tensile and Compressive Stress</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r30-shear-stress">1R30	Shear Stress</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r40-coefficient-of-restitution">1R40	Coefficient of Restitution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r50-crystal-structure">1R50	Crystal Structure</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <nav class="contents" id="contents" role="doc-toc">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#mechanics" id="id1">1. Mechanics</a></p>
+<ul>
+<li><p><a class="reference internal" href="#a-measurement" id="id2">1A	Measurement</a></p>
+<ul>
+<li><p><a class="reference internal" href="#a10-basic-units" id="id3">1A10	Basic Units</a></p></li>
+<li><p><a class="reference internal" href="#a20-error-and-accuracy" id="id4">1A20	Error and Accuracy</a></p></li>
+<li><p><a class="reference internal" href="#a30-coordinate-systems" id="id5">1A30	Coordinate Systems</a></p></li>
+<li><p><a class="reference internal" href="#a40-vectors" id="id6">1A40	Vectors</a></p></li>
+<li><p><a class="reference internal" href="#a50-math-topics" id="id7">1A50	Math Topics</a></p></li>
+<li><p><a class="reference internal" href="#a60-scaling" id="id8">1A60	Scaling</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#c-motion-in-one-dimension" id="id9">1C	Motion in one Dimension</a></p>
+<ul>
+<li><p><a class="reference internal" href="#c10-velocity" id="id10">1C10	Velocity</a></p></li>
+<li><p><a class="reference internal" href="#c20-uniform-acceleration" id="id11">1C20	Uniform Acceleration</a></p></li>
+<li><p><a class="reference internal" href="#c30-measuring-g" id="id12">1C30	Measuring g</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#d-motion-in-two-dimensions" id="id13">1D	Motion in two Dimensions</a></p>
+<ul>
+<li><p><a class="reference internal" href="#d10-displacement-in-two-dimensions" id="id14">1D10	Displacement in Two Dimensions</a></p></li>
+<li><p><a class="reference internal" href="#d15-velocity-position-and-acceleration" id="id15">1D15	Velocity, Position, and Acceleration</a></p></li>
+<li><p><a class="reference internal" href="#d40-motion-of-the-center-of-mass" id="id16">1D40	Motion of the Center of Mass</a></p></li>
+<li><p><a class="reference internal" href="#d50-central-forces" id="id17">1D50	Central Forces</a></p></li>
+<li><p><a class="reference internal" href="#d52-deformation-by-central-forces" id="id18">1D52	Deformation by Central Forces</a></p></li>
+<li><p><a class="reference internal" href="#d55-centrifugal-escape" id="id19">1D55	Centrifugal Escape</a></p></li>
+<li><p><a class="reference internal" href="#d60-projectile-motion" id="id20">1D60	Projectile Motion</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#e-relative-motion" id="id21">1E	Relative Motion</a></p>
+<ul>
+<li><p><a class="reference internal" href="#e10-moving-reference-frames" id="id22">1E10	Moving Reference Frames</a></p></li>
+<li><p><a class="reference internal" href="#e20-rotating-reference-frames" id="id23">1E20	Rotating Reference Frames</a></p></li>
+<li><p><a class="reference internal" href="#e30-coriolis-effect" id="id24">1E30	Coriolis Effect</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#f-newton-s-first-law" id="id25">1F	Newton’s First Law</a></p>
+<ul>
+<li><p><a class="reference internal" href="#f10-measuring-inertia" id="id26">1F10	Measuring Inertia</a></p></li>
+<li><p><a class="reference internal" href="#f20-inertia-of-rest" id="id27">1F20	Inertia of Rest</a></p></li>
+<li><p><a class="reference internal" href="#f30-inertia-of-motion" id="id28">1F30	Inertia of Motion</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#g-newton-s-second-law" id="id29">1G	Newton’s Second Law</a></p>
+<ul>
+<li><p><a class="reference internal" href="#g10-force-mass-and-acceleration" id="id30">1G10	Force, Mass, and Acceleration</a></p></li>
+<li><p><a class="reference internal" href="#g20-accelerated-reference-frames" id="id31">1G20	Accelerated Reference Frames</a></p></li>
+<li><p><a class="reference internal" href="#g30-complex-systems" id="id32">1G30	Complex Systems</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#h-newton-s-third-law" id="id33">1H	Newton’s Third Law</a></p>
+<ul>
+<li><p><a class="reference internal" href="#h10-action-and-reaction" id="id34">1H10	Action and Reaction</a></p></li>
+<li><p><a class="reference internal" href="#h11-recoil" id="id35">1H11	Recoil</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#j-statics-of-rigid-bodies" id="id36">1J	Statics of Rigid Bodies</a></p>
+<ul>
+<li><p><a class="reference internal" href="#j10-finding-center-of-gravity" id="id37">1J10	Finding Center of Gravity</a></p></li>
+<li><p><a class="reference internal" href="#j11-exceeding-center-of-gravity" id="id38">1J11	Exceeding Center of Gravity</a></p></li>
+<li><p><a class="reference internal" href="#j20-stable-unstable-and-neutral-equilibrium" id="id39">1J20	Stable, Unstable and Neutral Equilibrium</a></p></li>
+<li><p><a class="reference internal" href="#j30-resolution-of-forces" id="id40">1J30	Resolution of Forces</a></p></li>
+<li><p><a class="reference internal" href="#j40-static-torque" id="id41">1J40	Static Torque</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#k-applications-of-newton-s-laws" id="id42">1K	Applications of Newton’s Laws</a></p>
+<ul>
+<li><p><a class="reference internal" href="#k10-dynamic-torque" id="id43">1K10	Dynamic Torque</a></p></li>
+<li><p><a class="reference internal" href="#k20-friction" id="id44">1K20	Friction</a></p></li>
+<li><p><a class="reference internal" href="#k30-pressure" id="id45">1K30	Pressure</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#l-gravity" id="id46">1L	Gravity</a></p>
+<ul>
+<li><p><a class="reference internal" href="#l10-universal-gravitational-constant" id="id47">1L10	Universal Gravitational Constant</a></p></li>
+<li><p><a class="reference internal" href="#l20-orbits" id="id48">1L20	Orbits</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#m-work-and-energy" id="id49">1M	Work and Energy</a></p>
+<ul>
+<li><p><a class="reference internal" href="#m10-work" id="id50">1M10	Work</a></p></li>
+<li><p><a class="reference internal" href="#m20-simple-machines" id="id51">1M20	Simple Machines</a></p></li>
+<li><p><a class="reference internal" href="#m30-non-conservative-forces" id="id52">1M30	Non-Conservative Forces</a></p></li>
+<li><p><a class="reference internal" href="#m40-conservation-of-energy" id="id53">1M40	Conservation of Energy</a></p></li>
+<li><p><a class="reference internal" href="#m50-mechanical-power" id="id54">1M50	Mechanical Power</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#n-linear-momentum-and-collisions" id="id55">1N	Linear Momentum and Collisions</a></p>
+<ul>
+<li><p><a class="reference internal" href="#n10-impulse-and-thrust" id="id56">1N10	Impulse and Thrust</a></p></li>
+<li><p><a class="reference internal" href="#n20-conservation-of-linear-momentum" id="id57">1N20	Conservation of Linear Momentum</a></p></li>
+<li><p><a class="reference internal" href="#n21-mass-and-momentum-transfer" id="id58">1N21	Mass and Momentum Transfer</a></p></li>
+<li><p><a class="reference internal" href="#n22-rockets" id="id59">1N22	Rockets</a></p></li>
+<li><p><a class="reference internal" href="#n30-collisions-in-one-dimension" id="id60">1N30	Collisions in One Dimension</a></p></li>
+<li><p><a class="reference internal" href="#n40-collisions-in-two-dimensions" id="id61">1N40	Collisions in Two Dimensions</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#q-rotational-dynamics" id="id62">1Q	Rotational Dynamics</a></p>
+<ul>
+<li><p><a class="reference internal" href="#q10-moment-of-inertia" id="id63">1Q10	Moment of Inertia</a></p></li>
+<li><p><a class="reference internal" href="#q20-rotational-energy" id="id64">1Q20	Rotational Energy</a></p></li>
+<li><p><a class="reference internal" href="#q30-transfer-of-angular-momentum" id="id65">1Q30	Transfer of Angular Momentum</a></p></li>
+<li><p><a class="reference internal" href="#q40-conservation-of-angular-momentum" id="id66">1Q40	Conservation of Angular Momentum</a></p></li>
+<li><p><a class="reference internal" href="#q50-gyros" id="id67">1Q50	Gyros</a></p></li>
+<li><p><a class="reference internal" href="#q60-rotational-stability" id="id68">1Q60	Rotational Stability</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#r-properties-of-matter" id="id69">1R	Properties of Matter</a></p>
+<ul>
+<li><p><a class="reference internal" href="#r10-hooke-s-law" id="id70">1R10	Hooke’s Law</a></p></li>
+<li><p><a class="reference internal" href="#r20-tensile-and-compressive-stress" id="id71">1R20	Tensile and Compressive Stress</a></p></li>
+<li><p><a class="reference internal" href="#r30-shear-stress" id="id72">1R30	Shear Stress</a></p></li>
+<li><p><a class="reference internal" href="#r40-coefficient-of-restitution" id="id73">1R40	Coefficient of Restitution</a></p></li>
+<li><p><a class="reference internal" href="#r50-crystal-structure" id="id74">1R50	Crystal Structure</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<section class="tex2jax_ignore mathjax_ignore" id="mechanics">
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">1. Mechanics</a><a class="headerlink" href="#mechanics" title="Permalink to this heading">#</a></h1>
+<p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
+in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
+called <strong>MyST Markdown</strong>.</p>
+<section id="a-measurement">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">1A	Measurement</a><a class="headerlink" href="#a-measurement" title="Permalink to this heading">#</a></h2>
+<section id="a10-basic-units">
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">1A10	Basic Units</a><a class="headerlink" href="#a10-basic-units" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="a20-error-and-accuracy">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">1A20	Error and Accuracy</a><a class="headerlink" href="#a20-error-and-accuracy" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="a30-coordinate-systems">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">1A30	Coordinate Systems</a><a class="headerlink" href="#a30-coordinate-systems" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="a40-vectors">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">1A40	Vectors</a><a class="headerlink" href="#a40-vectors" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="a50-math-topics">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">1A50	Math Topics</a><a class="headerlink" href="#a50-math-topics" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="a60-scaling">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">1A60	Scaling</a><a class="headerlink" href="#a60-scaling" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="c-motion-in-one-dimension">
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">1C	Motion in one Dimension</a><a class="headerlink" href="#c-motion-in-one-dimension" title="Permalink to this heading">#</a></h2>
+<section id="c10-velocity">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">1C10	Velocity</a><a class="headerlink" href="#c10-velocity" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="c20-uniform-acceleration">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">1C20	Uniform Acceleration</a><a class="headerlink" href="#c20-uniform-acceleration" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="c30-measuring-g">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">1C30	Measuring g</a><a class="headerlink" href="#c30-measuring-g" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="d-motion-in-two-dimensions">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">1D	Motion in two Dimensions</a><a class="headerlink" href="#d-motion-in-two-dimensions" title="Permalink to this heading">#</a></h2>
+<section id="d10-displacement-in-two-dimensions">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">1D10	Displacement in Two Dimensions</a><a class="headerlink" href="#d10-displacement-in-two-dimensions" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="d15-velocity-position-and-acceleration">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">1D15	Velocity, Position, and Acceleration</a><a class="headerlink" href="#d15-velocity-position-and-acceleration" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="d40-motion-of-the-center-of-mass">
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">1D40	Motion of the Center of Mass</a><a class="headerlink" href="#d40-motion-of-the-center-of-mass" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="d50-central-forces">
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">1D50	Central Forces</a><a class="headerlink" href="#d50-central-forces" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="d52-deformation-by-central-forces">
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">1D52	Deformation by Central Forces</a><a class="headerlink" href="#d52-deformation-by-central-forces" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="d55-centrifugal-escape">
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">1D55	Centrifugal Escape</a><a class="headerlink" href="#d55-centrifugal-escape" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="d60-projectile-motion">
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">1D60	Projectile Motion</a><a class="headerlink" href="#d60-projectile-motion" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="e-relative-motion">
+<h2><a class="toc-backref" href="#id21" role="doc-backlink">1E	Relative Motion</a><a class="headerlink" href="#e-relative-motion" title="Permalink to this heading">#</a></h2>
+<section id="e10-moving-reference-frames">
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">1E10	Moving Reference Frames</a><a class="headerlink" href="#e10-moving-reference-frames" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="e20-rotating-reference-frames">
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">1E20	Rotating Reference Frames</a><a class="headerlink" href="#e20-rotating-reference-frames" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="e30-coriolis-effect">
+<h3><a class="toc-backref" href="#id24" role="doc-backlink">1E30	Coriolis Effect</a><a class="headerlink" href="#e30-coriolis-effect" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="f-newton-s-first-law">
+<h2><a class="toc-backref" href="#id25" role="doc-backlink">1F	Newton’s First Law</a><a class="headerlink" href="#f-newton-s-first-law" title="Permalink to this heading">#</a></h2>
+<section id="f10-measuring-inertia">
+<h3><a class="toc-backref" href="#id26" role="doc-backlink">1F10	Measuring Inertia</a><a class="headerlink" href="#f10-measuring-inertia" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="f20-inertia-of-rest">
+<h3><a class="toc-backref" href="#id27" role="doc-backlink">1F20	Inertia of Rest</a><a class="headerlink" href="#f20-inertia-of-rest" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="f30-inertia-of-motion">
+<h3><a class="toc-backref" href="#id28" role="doc-backlink">1F30	Inertia of Motion</a><a class="headerlink" href="#f30-inertia-of-motion" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="g-newton-s-second-law">
+<h2><a class="toc-backref" href="#id29" role="doc-backlink">1G	Newton’s Second Law</a><a class="headerlink" href="#g-newton-s-second-law" title="Permalink to this heading">#</a></h2>
+<section id="g10-force-mass-and-acceleration">
+<h3><a class="toc-backref" href="#id30" role="doc-backlink">1G10	Force, Mass, and Acceleration</a><a class="headerlink" href="#g10-force-mass-and-acceleration" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="g20-accelerated-reference-frames">
+<h3><a class="toc-backref" href="#id31" role="doc-backlink">1G20	Accelerated Reference Frames</a><a class="headerlink" href="#g20-accelerated-reference-frames" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="g30-complex-systems">
+<h3><a class="toc-backref" href="#id32" role="doc-backlink">1G30	Complex Systems</a><a class="headerlink" href="#g30-complex-systems" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="h-newton-s-third-law">
+<h2><a class="toc-backref" href="#id33" role="doc-backlink">1H	Newton’s Third Law</a><a class="headerlink" href="#h-newton-s-third-law" title="Permalink to this heading">#</a></h2>
+<section id="h10-action-and-reaction">
+<h3><a class="toc-backref" href="#id34" role="doc-backlink">1H10	Action and Reaction</a><a class="headerlink" href="#h10-action-and-reaction" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="h11-recoil">
+<h3><a class="toc-backref" href="#id35" role="doc-backlink">1H11	Recoil</a><a class="headerlink" href="#h11-recoil" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="j-statics-of-rigid-bodies">
+<h2><a class="toc-backref" href="#id36" role="doc-backlink">1J	Statics of Rigid Bodies</a><a class="headerlink" href="#j-statics-of-rigid-bodies" title="Permalink to this heading">#</a></h2>
+<section id="j10-finding-center-of-gravity">
+<h3><a class="toc-backref" href="#id37" role="doc-backlink">1J10	Finding Center of Gravity</a><a class="headerlink" href="#j10-finding-center-of-gravity" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="j11-exceeding-center-of-gravity">
+<h3><a class="toc-backref" href="#id38" role="doc-backlink">1J11	Exceeding Center of Gravity</a><a class="headerlink" href="#j11-exceeding-center-of-gravity" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="j20-stable-unstable-and-neutral-equilibrium">
+<h3><a class="toc-backref" href="#id39" role="doc-backlink">1J20	Stable, Unstable and Neutral Equilibrium</a><a class="headerlink" href="#j20-stable-unstable-and-neutral-equilibrium" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="j30-resolution-of-forces">
+<h3><a class="toc-backref" href="#id40" role="doc-backlink">1J30	Resolution of Forces</a><a class="headerlink" href="#j30-resolution-of-forces" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="j40-static-torque">
+<h3><a class="toc-backref" href="#id41" role="doc-backlink">1J40	Static Torque</a><a class="headerlink" href="#j40-static-torque" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="k-applications-of-newton-s-laws">
+<h2><a class="toc-backref" href="#id42" role="doc-backlink">1K	Applications of Newton’s Laws</a><a class="headerlink" href="#k-applications-of-newton-s-laws" title="Permalink to this heading">#</a></h2>
+<section id="k10-dynamic-torque">
+<h3><a class="toc-backref" href="#id43" role="doc-backlink">1K10	Dynamic Torque</a><a class="headerlink" href="#k10-dynamic-torque" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="k20-friction">
+<h3><a class="toc-backref" href="#id44" role="doc-backlink">1K20	Friction</a><a class="headerlink" href="#k20-friction" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="k30-pressure">
+<h3><a class="toc-backref" href="#id45" role="doc-backlink">1K30	Pressure</a><a class="headerlink" href="#k30-pressure" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="l-gravity">
+<h2><a class="toc-backref" href="#id46" role="doc-backlink">1L	Gravity</a><a class="headerlink" href="#l-gravity" title="Permalink to this heading">#</a></h2>
+<section id="l10-universal-gravitational-constant">
+<h3><a class="toc-backref" href="#id47" role="doc-backlink">1L10	Universal Gravitational Constant</a><a class="headerlink" href="#l10-universal-gravitational-constant" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="l20-orbits">
+<h3><a class="toc-backref" href="#id48" role="doc-backlink">1L20	Orbits</a><a class="headerlink" href="#l20-orbits" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="m-work-and-energy">
+<h2><a class="toc-backref" href="#id49" role="doc-backlink">1M	Work and Energy</a><a class="headerlink" href="#m-work-and-energy" title="Permalink to this heading">#</a></h2>
+<section id="m10-work">
+<h3><a class="toc-backref" href="#id50" role="doc-backlink">1M10	Work</a><a class="headerlink" href="#m10-work" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="m20-simple-machines">
+<h3><a class="toc-backref" href="#id51" role="doc-backlink">1M20	Simple Machines</a><a class="headerlink" href="#m20-simple-machines" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="m30-non-conservative-forces">
+<h3><a class="toc-backref" href="#id52" role="doc-backlink">1M30	Non-Conservative Forces</a><a class="headerlink" href="#m30-non-conservative-forces" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="m40-conservation-of-energy">
+<h3><a class="toc-backref" href="#id53" role="doc-backlink">1M40	Conservation of Energy</a><a class="headerlink" href="#m40-conservation-of-energy" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="m50-mechanical-power">
+<h3><a class="toc-backref" href="#id54" role="doc-backlink">1M50	Mechanical Power</a><a class="headerlink" href="#m50-mechanical-power" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="n-linear-momentum-and-collisions">
+<h2><a class="toc-backref" href="#id55" role="doc-backlink">1N	Linear Momentum and Collisions</a><a class="headerlink" href="#n-linear-momentum-and-collisions" title="Permalink to this heading">#</a></h2>
+<section id="n10-impulse-and-thrust">
+<h3><a class="toc-backref" href="#id56" role="doc-backlink">1N10	Impulse and Thrust</a><a class="headerlink" href="#n10-impulse-and-thrust" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="n20-conservation-of-linear-momentum">
+<h3><a class="toc-backref" href="#id57" role="doc-backlink">1N20	Conservation of Linear Momentum</a><a class="headerlink" href="#n20-conservation-of-linear-momentum" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="n21-mass-and-momentum-transfer">
+<h3><a class="toc-backref" href="#id58" role="doc-backlink">1N21	Mass and Momentum Transfer</a><a class="headerlink" href="#n21-mass-and-momentum-transfer" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="n22-rockets">
+<h3><a class="toc-backref" href="#id59" role="doc-backlink">1N22	Rockets</a><a class="headerlink" href="#n22-rockets" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="n30-collisions-in-one-dimension">
+<h3><a class="toc-backref" href="#id60" role="doc-backlink">1N30	Collisions in One Dimension</a><a class="headerlink" href="#n30-collisions-in-one-dimension" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="n40-collisions-in-two-dimensions">
+<h3><a class="toc-backref" href="#id61" role="doc-backlink">1N40	Collisions in Two Dimensions</a><a class="headerlink" href="#n40-collisions-in-two-dimensions" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="q-rotational-dynamics">
+<h2><a class="toc-backref" href="#id62" role="doc-backlink">1Q	Rotational Dynamics</a><a class="headerlink" href="#q-rotational-dynamics" title="Permalink to this heading">#</a></h2>
+<section id="q10-moment-of-inertia">
+<h3><a class="toc-backref" href="#id63" role="doc-backlink">1Q10	Moment of Inertia</a><a class="headerlink" href="#q10-moment-of-inertia" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="q20-rotational-energy">
+<h3><a class="toc-backref" href="#id64" role="doc-backlink">1Q20	Rotational Energy</a><a class="headerlink" href="#q20-rotational-energy" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="q30-transfer-of-angular-momentum">
+<h3><a class="toc-backref" href="#id65" role="doc-backlink">1Q30	Transfer of Angular Momentum</a><a class="headerlink" href="#q30-transfer-of-angular-momentum" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="q40-conservation-of-angular-momentum">
+<h3><a class="toc-backref" href="#id66" role="doc-backlink">1Q40	Conservation of Angular Momentum</a><a class="headerlink" href="#q40-conservation-of-angular-momentum" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="q50-gyros">
+<h3><a class="toc-backref" href="#id67" role="doc-backlink">1Q50	Gyros</a><a class="headerlink" href="#q50-gyros" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="q60-rotational-stability">
+<h3><a class="toc-backref" href="#id68" role="doc-backlink">1Q60	Rotational Stability</a><a class="headerlink" href="#q60-rotational-stability" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="r-properties-of-matter">
+<h2><a class="toc-backref" href="#id69" role="doc-backlink">1R	Properties of Matter</a><a class="headerlink" href="#r-properties-of-matter" title="Permalink to this heading">#</a></h2>
+<section id="r10-hooke-s-law">
+<h3><a class="toc-backref" href="#id70" role="doc-backlink">1R10	Hooke’s Law</a><a class="headerlink" href="#r10-hooke-s-law" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="r20-tensile-and-compressive-stress">
+<h3><a class="toc-backref" href="#id71" role="doc-backlink">1R20	Tensile and Compressive Stress</a><a class="headerlink" href="#r20-tensile-and-compressive-stress" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="r30-shear-stress">
+<h3><a class="toc-backref" href="#id72" role="doc-backlink">1R30	Shear Stress</a><a class="headerlink" href="#r30-shear-stress" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="r40-coefficient-of-restitution">
+<h3><a class="toc-backref" href="#id73" role="doc-backlink">1R40	Coefficient of Restitution</a><a class="headerlink" href="#r40-coefficient-of-restitution" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="r50-crystal-structure">
+<h3><a class="toc-backref" href="#id74" role="doc-backlink">1R50	Crystal Structure</a><a class="headerlink" href="#r50-crystal-structure" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./book/chapters/1 mechanics"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="1G%20newton%27s%20second%20law.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">1G	Newton’s Second Law</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="1J%20statics%20of%20rigid%20bodies.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">1J	Statics of Rigid Bodies</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-measurement">1A	Measurement</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a10-basic-units">1A10	Basic Units</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a20-error-and-accuracy">1A20	Error and Accuracy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a30-coordinate-systems">1A30	Coordinate Systems</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a40-vectors">1A40	Vectors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a50-math-topics">1A50	Math Topics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a60-scaling">1A60	Scaling</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-motion-in-one-dimension">1C	Motion in one Dimension</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c10-velocity">1C10	Velocity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c20-uniform-acceleration">1C20	Uniform Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c30-measuring-g">1C30	Measuring g</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-motion-in-two-dimensions">1D	Motion in two Dimensions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d10-displacement-in-two-dimensions">1D10	Displacement in Two Dimensions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d15-velocity-position-and-acceleration">1D15	Velocity, Position, and Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d40-motion-of-the-center-of-mass">1D40	Motion of the Center of Mass</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d50-central-forces">1D50	Central Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d52-deformation-by-central-forces">1D52	Deformation by Central Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d55-centrifugal-escape">1D55	Centrifugal Escape</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d60-projectile-motion">1D60	Projectile Motion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-relative-motion">1E	Relative Motion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e10-moving-reference-frames">1E10	Moving Reference Frames</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e20-rotating-reference-frames">1E20	Rotating Reference Frames</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e30-coriolis-effect">1E30	Coriolis Effect</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-newton-s-first-law">1F	Newton’s First Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f10-measuring-inertia">1F10	Measuring Inertia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f20-inertia-of-rest">1F20	Inertia of Rest</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f30-inertia-of-motion">1F30	Inertia of Motion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#g-newton-s-second-law">1G	Newton’s Second Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g10-force-mass-and-acceleration">1G10	Force, Mass, and Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g20-accelerated-reference-frames">1G20	Accelerated Reference Frames</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g30-complex-systems">1G30	Complex Systems</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#h-newton-s-third-law">1H	Newton’s Third Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#h10-action-and-reaction">1H10	Action and Reaction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#h11-recoil">1H11	Recoil</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#j-statics-of-rigid-bodies">1J	Statics of Rigid Bodies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#j10-finding-center-of-gravity">1J10	Finding Center of Gravity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#j11-exceeding-center-of-gravity">1J11	Exceeding Center of Gravity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#j20-stable-unstable-and-neutral-equilibrium">1J20	Stable, Unstable and Neutral Equilibrium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#j30-resolution-of-forces">1J30	Resolution of Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#j40-static-torque">1J40	Static Torque</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#k-applications-of-newton-s-laws">1K	Applications of Newton’s Laws</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#k10-dynamic-torque">1K10	Dynamic Torque</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#k20-friction">1K20	Friction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#k30-pressure">1K30	Pressure</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-gravity">1L	Gravity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l10-universal-gravitational-constant">1L10	Universal Gravitational Constant</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l20-orbits">1L20	Orbits</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#m-work-and-energy">1M	Work and Energy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#m10-work">1M10	Work</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#m20-simple-machines">1M20	Simple Machines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#m30-non-conservative-forces">1M30	Non-Conservative Forces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#m40-conservation-of-energy">1M40	Conservation of Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#m50-mechanical-power">1M50	Mechanical Power</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#n-linear-momentum-and-collisions">1N	Linear Momentum and Collisions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n10-impulse-and-thrust">1N10	Impulse and Thrust</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n20-conservation-of-linear-momentum">1N20	Conservation of Linear Momentum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n21-mass-and-momentum-transfer">1N21	Mass and Momentum Transfer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n22-rockets">1N22	Rockets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n30-collisions-in-one-dimension">1N30	Collisions in One Dimension</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n40-collisions-in-two-dimensions">1N40	Collisions in Two Dimensions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#q-rotational-dynamics">1Q	Rotational Dynamics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q10-moment-of-inertia">1Q10	Moment of Inertia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q20-rotational-energy">1Q20	Rotational Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q30-transfer-of-angular-momentum">1Q30	Transfer of Angular Momentum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q40-conservation-of-angular-momentum">1Q40	Conservation of Angular Momentum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q50-gyros">1Q50	Gyros</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q60-rotational-stability">1Q60	Rotational Stability</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#r-properties-of-matter">1R	Properties of Matter</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r10-hooke-s-law">1R10	Hooke’s Law</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r20-tensile-and-compressive-stress">1R20	Tensile and Compressive Stress</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r30-shear-stress">1R30	Shear Stress</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r40-coefficient-of-restitution">1R40	Coefficient of Restitution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r50-crystal-structure">1R50	Crystal Structure</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Ron Haaksman
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
