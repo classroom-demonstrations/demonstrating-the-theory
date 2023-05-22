@@ -4,7 +4,7 @@ This is a first stab at documenting a collection of demonstrations.
 
 :::{note}
 Here is a note!
-Enjoy!!
+Enjoy the book!!
 :::
 
 And here is a code block:

@@ -11,6 +11,8 @@ kernelspec:
   name: python3
 ---
 
+```{contents}
+```
 
 # 2. Fluid Mechanics
 
