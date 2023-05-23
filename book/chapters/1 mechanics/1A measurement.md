@@ -22,7 +22,7 @@ kernelspec:
 1A20.01	1R10.01	 		[Hooke's Law](https://www.de-monstrare.nl/pdf/Hooke%27s%20law.pdf)
 <br/>
 
-![Error analysis](/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg "Error"){ width=60%,height:30px }
+![Error analysis](/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg)
 <br/>
 ![Error analysis](https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1%20mechanics/1A/pictures/error_analysis.jpg)
 <br/>
