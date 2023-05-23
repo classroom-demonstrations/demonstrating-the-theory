@@ -32,7 +32,7 @@ kernelspec:
 <br/>
 <p><img src="https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg" alt="alt text 5" title="image Title 5" width="150"/></p>
 <br/>
-<p><img src="https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg"></p>
+<p><img src="https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg" /></p>
 <br/>
 
 1A20.02				Error Analysis (1)	N/A		Let a ruler slip through your fingers and catch it to determine your reaction time.
