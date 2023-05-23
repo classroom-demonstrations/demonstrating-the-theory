@@ -24,7 +24,7 @@ kernelspec:
 
 <p>![Error analysis 1](/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg)</p>
 <br/>
-<p>![Error analysis 2](1A/pictures/error_analysis.jpg)</p>
+<p>![Error analysis 2](/1A/pictures/error_analysis.jpg)</p>
 <br/>
 <p>![Error analysis 3](https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1%20mechanics/1A/pictures/error_analysis.jpg)</p>
 <br/>
