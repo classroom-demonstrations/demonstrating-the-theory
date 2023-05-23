@@ -13,6 +13,7 @@ kernelspec:
 
 ```{contents}
 ```
+# Electromagnetism
 
 ## 5A	Electrostatics
 ## 5B	Electric Fields and Potential
