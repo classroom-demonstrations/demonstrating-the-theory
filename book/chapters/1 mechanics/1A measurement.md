@@ -24,7 +24,7 @@ kernelspec:
 
 ![Error analysis](book/chapters/1 mechanics/1A/pictures/error_analysis.jpg "Error"){ width=60%,height:30px }
 <br/>
-![Error analysis](https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg)
+![Error analysis](https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1%20mechanics/1A/pictures/error_analysis.jpg)
 <br/>
 <img src="/1A/pictures/error_analysis.jpg" alt="alt text" title="image Title" width="150"/>
 <br/>
