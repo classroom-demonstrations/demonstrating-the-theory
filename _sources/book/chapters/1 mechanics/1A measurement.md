@@ -24,9 +24,11 @@ kernelspec:
 
 ![Error analysis](book/chapters/1 mechanics/1A/pictures/error_analysis.jpg "Error"){ width=60%,height:30px }
 <br/>
+![Error analysis](https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg "Error"){ width=60%,height:30px }
+<br/>
 <img src="/1A/pictures/error_analysis.jpg" alt="alt text" title="image Title" width="150"/>
 <br/>
-<img src="https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1.mechanics/1A/pictures/error_analysis.jpg" alt="alt text" title="image Title" width="150"/>
+<img src="https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg" alt="alt text" title="image Title" width="150"/>
 <br/>
 1A20.02				Error Analysis (1)	N/A		Let a ruler slip through your fingers and catch it to determine your reaction time.
 <br/>
