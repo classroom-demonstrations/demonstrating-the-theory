@@ -22,13 +22,13 @@ kernelspec:
 1A20.01	1R10.01	 		[Hooke's Law](https://www.de-monstrare.nl/pdf/Hooke%27s%20law.pdf)
 <br/>
 
-![Error analysis](/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg)
+<p>![Error analysis](/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg)</p>
 <br/>
-![Error analysis](https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1%20mechanics/1A/pictures/error_analysis.jpg)
+<p>![Error analysis](https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1%20mechanics/1A/pictures/error_analysis.jpg)</p>
 <br/>
-<img src="/1A/pictures/error_analysis.jpg" alt="alt text" title="image Title" width="150"/>
+<p><img src="/1A/pictures/error_analysis.jpg" alt="alt text" title="image Title" width="150"/></p>
 <br/>
-<img src="https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg" alt="alt text" title="image Title" width="150"/>
+<p><img src="https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg" alt="alt text" title="image Title" width="150"/></p>
 <br/>
 1A20.02				Error Analysis (1)	N/A		Let a ruler slip through your fingers and catch it to determine your reaction time.
 <br/>
