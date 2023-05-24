@@ -30,11 +30,13 @@ kernelspec:
 <br/> 
 <p>![Error analysis 4](https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg)</p>
 <br/>
-<p><img src="/1A/pictures/error_analysis.jpg" alt="alt text 5" title="image Title 5" width="150"/></p>
+<p><img src="./1A/pictures/error_analysis.jpg" alt="alt text 5" title="image Title 5" width="150"/></p>
 <br/>
 <p><img src="https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg" alt="alt text 6b" title="image Title 6" width="150"/></p>
 <br/>
-<p><img src="https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1%20mechanics/1A/pictures/error_analysis.jpg"></p>
+<p><img src="https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1%20mechanics/1A/pictures/error_analysis.jpg"/></p>
+<br/>
+
 <br/>
 [https://www.google.com/search?q=my%20query](https://www.google.com/search?q=my%20query)
 <br/>
