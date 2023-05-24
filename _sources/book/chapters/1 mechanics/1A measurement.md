@@ -37,7 +37,7 @@ your-code
 <br/>
 <p>![Error analysis 4b](./demonstrating-the-theory/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg)</p>
 <br/>
-<p><img src="master/1A/pictures/error_analysis.jpg" alt="alt text 5b" title="image Title 5b" width="150"/></p>
+<p><img src="master/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg" alt="alt text 5a" title="image Title 5a" width="150"/></p>
 <br/>
 <p><img src="https://github.com/classroom-demonstrations/demonstrating-the-theory/tree/master/book/chapters/1%20mechanics/1A/pictures/error_analysis.jpg" alt="alt text 6" title="image Title 6" width="150"/></p>
 <br/>
