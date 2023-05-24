@@ -45,7 +45,7 @@ your-code
 <br/>
 ===================================================
 <br/>
-<p><img src="https://github.com/classroom-demonstrations/demonstrating-the-theory/tree/master/book/chapters/1%20mechanics/1A/pictures/error_analysis.jpg" alt="alt text 8" title="image Title 8" width="150"/></p>
+<p><img src="https://github.com/classroom-demonstrations/demonstrating-the-theory/_build/html/book/chapters/1%20mechanics/1A/pictures/error_analysis.jpg" alt="alt text 8" title="image Title 8" width="150"/></p>
 <br/>
 <p><img src="https://classroom-demonstrations.github.io/demonstrating-the-theory/book/chapters/1 mechanics/1A/pictures/error_analysis.jpg" alt="alt text 9" title="image Title 9" width="150"/></p>
 <br/>
