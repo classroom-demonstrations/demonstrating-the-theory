@@ -41,7 +41,7 @@ your-code
 <br/>
 ==================================================
 <br/>
-<img src="1A/pictures/error_analysis.jpg" alt="alt text 7" title="image Title 7" width=150/>
+<img src="1A/pictures/error_analysis.jpg" alt="alt text 7" title="image Title 7" width="150"/>
 <br/>
 ===================================================
 <br/>
