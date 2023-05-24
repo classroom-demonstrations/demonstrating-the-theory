@@ -11,6 +11,11 @@ kernelspec:
   name: python3
 ---
 
+```{code-cell}
+:tags: [tag1, tag2, tag3]
+your-code
+```
+
 ```{contents}
 ```
 
@@ -22,7 +27,7 @@ kernelspec:
 1A20.01	1R10.01	 		[Hooke's Law](https://www.de-monstrare.nl/pdf/Hooke%27s%20law.pdf)
 <br/>
 
-<p>![Error analysis 1](./book/chapters/1 mechanics/1A/pictures/error_analysis.jpg)</p>
+<p>![Error analysis 1](./1A/pictures/error_analysis.jpg)</p>
 <br/>
 <p>![Error analysis 2](./1A/pictures/error_analysis.jpg)</p>
 <br/>
